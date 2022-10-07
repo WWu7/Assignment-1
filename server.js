@@ -13,9 +13,6 @@ server.listen(PORT);
 server.on('error', onError);
 server.on('listening', onListening);
 
-//setting the static file path
-app.use(express.static(__dirname+'/public'));
-
 function normalizePort(val) {
     var port = parseInt(val, 10);
     if (isNaN(port)) {
